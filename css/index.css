@@ -11,7 +11,7 @@
   justify-content: space-around;
   background-color: #031F73; 
   padding: 10px 40px;
-  height: 70px;
+  height: 10vh;
 }
 .logo {
   position: relative; 
@@ -41,7 +41,7 @@
   transform: translate(-50%, -50%) rotate(45deg);
   width: 60px;
   height: 60px;
-  background-color: #031F73; /* same as navbar background */
+  background-color: #031F73;
    
   border-radius: 15px;
   z-index: 0; 
@@ -77,4 +77,77 @@
 .nav-links a:hover {
   font-size: 25px;
   color :#c49000;
+}
+
+
+/*__________________search section _________*/
+
+/* full screen section */
+.search-section {
+  height: 90vh; /* fills the entire visible height of the device */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* change if you want a background image or color */
+}
+
+/* search bar style */
+.search-bar {
+  display: flex;
+  border: 2px solid #031F73;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* inputs */
+.search-bar input {
+  border: none;
+  border-right: 2px solid #031F73;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #031F73;
+  width: 180px;
+  font-family: 'Orbitron', sans-serif;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #031F73;
+}
+
+/* button */
+.search-bar button {
+  background-color: #FDC808;
+  color: #031F73;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* hover */
+.search-bar button:hover {
+  background-color: #c49000;
+  transform: scale(1.05);
+}
+
+/* mobile version */
+@media (max-width: 700px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #031F73;
+  }
+
+  .search-bar button {
+    border-bottom: none;
+  }
 }
