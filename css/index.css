@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #031F73; 
+  padding: 10px 40px;
+  height: 70px;
+}
+.logo {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+ position: relative;
+   z-index: 1;
+  margin-top: 45px;
+  height: 120px;
+  transition: height 0.1s ease, height 0.4s ease;
+  animation: pulseLogo 2.5s ease-in-out infinite; 
+}
+
+.logo img:hover {
+    animation-play-state: paused;
+    height : 150px;
+
+}
+.logo .shadow {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 60px;
+  height: 60px;
+  background-color: #031F73; /* same as navbar background */
+   
+  border-radius: 15px;
+  z-index: 0; 
+  transition: box-shadow 0.3s ease;
+}
+.logo:hover .shadow{
+    box-shadow: 0 0 48px 25px  #fdc808;
+
+}
+
+@keyframes pulseLogo {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.nav-links{
+    display: flex;
+  
+  justify-content: space-between;
+  width: 70vw;
+}
+.nav-links a {
+  
+  color: #FDC808; 
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: font-size 0.4s ease;
+}
+
+.nav-links a:hover {
+  font-size: 25px;
+  color :#c49000;
+}
