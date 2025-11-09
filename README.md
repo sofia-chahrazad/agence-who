@@ -68,7 +68,7 @@ Les réductions sont appliquées automatiquement lors de la réservation.
 1. L’utilisateur s’inscrit en tant qu’**Étudiant**  
 2. Il choisit la destination **“Renaissance italienne”**  
 3. Le système applique automatiquement une **réduction de 15%**  
-4. Il reçoit un billet temporel personnalisé ✨
+4. Il reçoit un billet temporel personnalisé 
 
 ---
 
