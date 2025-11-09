@@ -85,7 +85,7 @@ Projet imaginé par un groupe d’étudiants passionnés d’informatique, d’h
 ## Objectif pédagogique
 
 Ce projet a pour but de :
-- Mettre en pratique les compétences web (HTML/CSS/JS)
+- Mettre en pratique les compétences web (HTML/CSS/JS/tailwind)
 - Créer une **interface immersive et narrative**
 - Travailler en équipe sur un **thème créatif inspiré de la pop culture**
 
