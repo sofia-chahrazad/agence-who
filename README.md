@@ -82,7 +82,7 @@ Projet imaginé par un groupe d’étudiants passionnés d’informatique, d’h
 
 ---
 
-## 🔮 Objectif pédagogique
+## Objectif pédagogique
 
 Ce projet a pour but de :
 - Mettre en pratique les compétences web (HTML/CSS/JS)
