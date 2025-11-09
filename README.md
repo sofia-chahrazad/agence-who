@@ -76,9 +76,9 @@ Les réductions sont appliquées automatiquement lors de la réservation.
 
 Projet imaginé par un groupe d’étudiants passionnés d’informatique, d’histoire et de science-fiction.
 
-- 👽 **Étudiant A** – Développement frontend  
+- 👽 **Étudiant A** – RASLAIN Sofia Chahrazad : Développement frontend  
 - 🕵️ **Étudiant B** – Conception et logique métier  
-- 🧙 **Étudiant C** – Univers et cohérence temporelle  
+ 
 
 ---
 
