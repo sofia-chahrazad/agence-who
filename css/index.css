@@ -13,6 +13,8 @@
   background-color: #031F73; 
   padding: 10px 40px;
   height: 10vh;
+  width: 100%;
+  position: fixed;
 }
 .logo {
   position: relative; 
@@ -85,7 +87,7 @@
 
 /* full screen section */
 .search-section {
-  height: 90vh; /* fills the entire visible height of the device */
+  height: 100vh; /* fills the entire visible height of the device */
   display: flex;
   justify-content: center;
   align-items: center;
