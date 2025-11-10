@@ -101,6 +101,7 @@
   border: 2px solid #031F73;
   background-color: #fff;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 /* inputs */
