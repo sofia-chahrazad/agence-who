@@ -89,9 +89,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white; /* change if you want a background image or color */
-}
+  background-image: url("../images/bg-image.png");
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
+}
 /* search bar style */
 .search-bar {
   display: flex;
