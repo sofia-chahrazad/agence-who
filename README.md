@@ -23,7 +23,7 @@ Trois profils principaux définissent l’expérience utilisateur :
 |--------|--------------|-----------|
 | 🎓 **Étudiant** | Curieux du monde et avide de découverte temporelle | -15% sur les voyages éducatifs (ex : Renaissance italienne) |
 | 🏺 **Historien** | Passionné d’Histoire et de civilisations anciennes | -20% sur les voyages vers l’Antiquité ou le Moyen Âge |
-| 🚀 **Membre d’un club de science-fiction** | Admirateur du Docteur et des mystères temporels | -25% sur les destinations futuristes et interstellaires |
+| 🚀 **Membre d’un club de science-fiction** | Admirateur du Docteur et des mystères temporels | -25% sur  les destinations futuristes et interstellaires |
 
 Chaque voyageur peut choisir son profil lors de l’inscription.  
 Les réductions sont appliquées automatiquement lors de la réservation.
