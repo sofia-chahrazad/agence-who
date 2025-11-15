@@ -87,8 +87,9 @@
 
 /* full screen section */
 .search-section {
-  height: 100vh; /* fills the entire visible height of the device */
+  height: 100vh; 
   display: flex;
+
   justify-content: center;
   align-items: center;
   background-image: url("../images/bg-image.png");
@@ -115,7 +116,6 @@
   padding: 12px 16px;
   font-size: 14px;
   color: #031F73;
-  width: 180px;
   font-family: 'Orbitron', sans-serif;
   outline: none;
 }
@@ -151,7 +151,6 @@
 
   .search-bar input,
   .search-bar button {
-    width: 100%;
     border-right: none;
     border-bottom: 2px solid #031F73;
   }
