@@ -311,7 +311,6 @@
 
 /*---------voire plus 2v----------------*/
 
-/* Button */
 .magic-btn {
   position: relative;
   padding: 20px 35px;
@@ -326,7 +325,6 @@
   cursor: pointer;
 }
 
-/* Common star style */
 .star {
   position: absolute;
   height: auto;
@@ -341,7 +339,6 @@
   height: auto;
 }
 
-/* Initial positions / sizes */
 .star-1 { top: 20%; left: 20%; width: 25px; }
 .star-2 { top: 45%; left: 45%; width: 15px; }
 .star-3 { top: 40%; left: 40%; width: 5px; }
@@ -349,7 +346,6 @@
 .star-5 { top: 25%; left: 45%; width: 15px; }
 .star-6 { top: 5%;  left: 50%; width: 5px; }
 
-/* Hover button */
 .magic-btn:hover {
   background: #031F73;
   color: #ffca08;
@@ -360,13 +356,12 @@
   transform: translateY(5px);
 }
 
-/* Common hover effect for all stars */
+
 .magic-btn:hover .star {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
-/* Hover positions */
 .magic-btn:hover .star-1 { top: -20%; left: -20%; width: 20px; }
 .magic-btn:hover .star-2 { top: 35%;  left: -25%; width: 15px; }
 .magic-btn:hover .star-3 { top: 80%;  left: -10%; width: 10px; }
