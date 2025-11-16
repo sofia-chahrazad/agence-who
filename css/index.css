@@ -172,7 +172,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffff;
 }
 
 .selection-title {
@@ -294,184 +294,85 @@
     justify-content: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+
 }
 
+.nav-btn:hover{
+    box-shadow: 10px 24px 10px rgba(0, 0, 0, 0.25);
+
+}
 
 
 .nav-btn:active {
     transform: translateY(2px);
 }
 
-/* BOUTON VOIR PLUS */
 
-.see-more-btn {
-    border: none;
-    cursor: pointer;
-    background-color: #ffca08;
-    color: #002c7f;
-    text-transform: lowercase;
-    font-size: 1.4rem;
-    padding: 18px 80px;
-    border-radius: 999px;
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
-}
-
-.see-more-btn:active {
-    transform: translateY(2px);
-}
 /*---------voire plus 2v----------------*/
 
-/* From Uiverse.io by dalbrechtmartin */ 
-button {
+/* Button */
+.magic-btn {
   position: relative;
   padding: 20px 35px;
-  background: #ffffff;
+  background: #ffca08;
   font-size: 20px;
   font-weight: 600;
-  color: #000000;
-  box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+  color: #031F73;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   border: none;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.star-1 {
+/* Common star style */
+.star {
   position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 25px;
   height: auto;
   filter: drop-shadow(0 0 0 #fffdef);
   z-index: -5;
   transition: all 0.8s cubic-bezier(0.05, 0.83, 0.43, 0.96);
 }
 
-.star-2 {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  width: 15px;
+.star img {
+  display: block;
+  width: 100%;
   height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
 }
 
-.star-3 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+/* Initial positions / sizes */
+.star-1 { top: 20%; left: 20%; width: 25px; }
+.star-2 { top: 45%; left: 45%; width: 15px; }
+.star-3 { top: 40%; left: 40%; width: 5px; }
+.star-4 { top: 20%; left: 40%; width: 8px; }
+.star-5 { top: 25%; left: 45%; width: 15px; }
+.star-6 { top: 5%;  left: 50%; width: 5px; }
+
+/* Hover button */
+.magic-btn:hover {
+  background: #031F73;
+  color: #ffca08;
+  box-shadow: 20px 24px 10px rgba(0, 0, 0, 0.25);
+  
+}
+.magic-btn:active{
+  transform: translateY(5px);
 }
 
-.star-4 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 8px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-5 {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-6 {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-button:hover {
-  background: #000000;
-  color: #ffffff;
-  box-shadow: 0 0 80px #ffffff8c;
-}
-
-button:hover .star-1 {
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 20px;
-  height: auto;
+/* Common hover effect for all stars */
+.magic-btn:hover .star {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
-button:hover .star-2 {
-  position: absolute;
-  top: 35%;
-  left: -25%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
-}
-
-button:hover .star-3 {
-  position: absolute;
-  top: 80%;
-  left: -10%;
-  width: 10px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
-}
-
-button:hover .star-4 {
-  position: absolute;
-  top: -25%;
-  left: 105%;
-  width: 20px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
-}
-
-button:hover .star-5 {
-  position: absolute;
-  top: 30%;
-  left: 115%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
-}
-
-button:hover .star-6 {
-  position: absolute;
-  top: 80%;
-  left: 105%;
-  width: 10px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
-}
-
-.fil0 {
-  fill: #fffdef;
-}
-
+/* Hover positions */
+.magic-btn:hover .star-1 { top: -20%; left: -20%; width: 20px; }
+.magic-btn:hover .star-2 { top: 35%;  left: -25%; width: 15px; }
+.magic-btn:hover .star-3 { top: 80%;  left: -10%; width: 10px; }
+.magic-btn:hover .star-4 { top: -25%; left: 105%; width: 20px; }
+.magic-btn:hover .star-5 { top: 30%;  left: 115%; width: 15px; }
+.magic-btn:hover .star-6 { top: 80%;  left: 105%; width: 10px; }
 
 
 /* RESPONSIVE */
