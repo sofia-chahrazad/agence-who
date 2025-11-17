@@ -75,6 +75,10 @@
 .front {
   transform: rotateY(180deg);
   color: white;
+  background-image: url(images/IMG_2410.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .front .front-content {
@@ -88,10 +92,8 @@
 }
 
 .front-content .badge {
-  background-color: #00000055;
   padding: 2px 10px;
   border-radius: 10px;
-  backdrop-filter: blur(2px);
   width: fit-content;
 }
 
