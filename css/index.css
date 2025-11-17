@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
 
 * {
   margin: 0;
@@ -474,9 +475,10 @@
 
 /*____________the footer sectiojn*/
 footer {
-  background-color: #031F73;
+  background-color: #00134b;
   color: #fdc808;
   width: 100%;
+  height: 50vh;
 }
 
 
@@ -486,13 +488,20 @@ footer {
   height: 100vh;
 
 }
-
+#con-cards >h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Oregano', cursive, sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #00154f;
+}
 .cardsPieces {
   width: 100%;
-  background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 2rem;
   padding: 2rem;
 }
 
@@ -681,4 +690,9 @@ footer {
   100% {
     transform: translateY(0px);
   }
+}
+/*the section on manque de destination-----------------------*/
+.montad{
+  width: 100%;
+  background-image: url();
 }
