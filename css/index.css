@@ -2,12 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Orbitron', sans-serif;
   scroll-behavior: smooth;
+}
+
+:root {
+  --ink: #0b2f6f;
+  /* bleu du contour/texte */
+  --bg: #e9eaee;
+  /* fond gris clair */
+  --theBLue: ;
+  --card-bg: #ffffff;
+  /* fond carte */
+  --radius: 22px;
+  /* arrondi cartes */
+  --border: 3px;
+  /* épaisseur bordure */
+  --shadow: 0 12px 30px rgba(0, 0, 0, .08);
 }
 
 html {
@@ -744,6 +760,7 @@ footer {
   justify-content: center;
   padding: min(6vh, 64px) 24px;
   font-family: 'Orbitron', sans-serif;
+  color: #002c7f;
 }
 
 .profiles .wrap {
@@ -751,11 +768,6 @@ footer {
   margin-inline: auto;
 }
 
-/* Titre */
-#title-profils {
-  font-family: 'Orbitron', sans-serif;
-
-}
 
 .profiles h2 {
   text-align: center;
