@@ -599,7 +599,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  filter: brightness(4);
+  filter: brightness(5);
 }
 
 .front .front-content {
