@@ -529,7 +529,7 @@ footer {
 }
 
 /*-----------card css------*/
-.card {
+#con-cards .card {
   overflow: visible;
   width: 290px;
   height: 354px;
@@ -537,7 +537,7 @@ footer {
 
 
 
-.content {
+#con-cards .content {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -546,8 +546,7 @@ footer {
   border-radius: 5px;
 }
 
-.front,
-.back {
+#con-cards .front, .back {
   background-color: #151515;
   position: absolute;
   width: 100%;
@@ -558,7 +557,7 @@ footer {
   overflow: hidden;
 }
 
-.back {
+#con-cards .back {
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -568,7 +567,7 @@ footer {
   background-color: #031f73;
 }
 
-.back::before {
+#con-cards .back::before {
   position: absolute;
   content: ' ';
   display: block;
@@ -578,7 +577,7 @@ footer {
   animation: rotation_481 5000ms infinite linear;
 }
 
-.back-content {
+#con-cards .back-content {
   position: absolute;
   width: 97%;
   height: 97%;
@@ -592,13 +591,13 @@ footer {
   gap: 30px;
 }
 
-.back-content>p {
+#con-cards .back-content>p {
   color: #fdc808;
   font-family: 'Orbitron', sans-serif;
   ;
 }
 
-.card:hover .content {
+#con-cards .card:hover .content {
   transform: rotateY(180deg);
 }
 
@@ -764,20 +763,69 @@ footer {
 }
 .carfs{
   display: flex;;
-  gap:30px;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 3rem 0;
-}
-.carf{
-  width: 25%;
-  height: 40vh;
-  border: 6px solid #00134b;
-  border-radius: 3rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  width: 100%;
+  gap: 15px;
 }
 
-.carf:hover {
-  transform: translateY(-10px);
-  box-shadow: 4px 15px 20px 10px rgb(158, 158, 158);
+/*_____________________*/
+.profiles .carfs > .card {
+ width: 400px ;
+ max-width: none;
+ height: 70vh;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ margin: 0 20px;
+}
+
+.carfs   .card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+.carfs  .card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #031f73;
+ color: #ffca08;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.carfs .text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.carfs > .text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.carfs  .card:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+ .carfs .card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
 }
