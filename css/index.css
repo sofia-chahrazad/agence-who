@@ -850,9 +850,15 @@ footer {
 .carfs  .card:hover {
  border-color: #031F73;
  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ 
 }
 
  .carfs .card:hover .card-button {
  transform: translate(-50%, 50%);
  opacity: 1;
+}
+/*--------------------------------- THE NEWSLETTER SECTION --------------------*/
+
+.module__newsletter__content{
+  display: flex;
 }
