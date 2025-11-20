@@ -245,26 +245,38 @@
         </div>
     </section>
     <section id="newletter">
-        <div class="module__newsletter__content">
-            <div class="module__newsletter__input input-style">
-                <label for="moduleNewsletterEmail">Abonnez-vous à notre newsletter</label>
-                <div class="register-message"></div>
-                <input id="moduleNewsletterEmail" class="input-style__input" type="email"
-                    placeholder="Saisir son email" />
-                <input class="input-style__submit" type="submit" value="s'inscrire" />
-                <span class="module__newsletter__policy behavior--addlink"
-                    data-obfurl="L3BvbGl0aXF1ZS1kZS1jb25maWRlbnRpYWxpdGU=">Lire notre politique de
-                    confidentialité</span>
+        <main>
+            <div class="containe-news">
+
+                <div class="news-title">
+                    <h2>
+                        Abonnez-vous à notre newsletter
+                    </h2>
+                </div>
+                <div class="news-grid">
+                    <div class="news-left">
+                        <form id="input" action="#" method="post">
+                            <input type="email" name="email" placeholder="Saisir son email" required>
+                            <button type="submit">S'INSCRIRE</button>
+                        </form>
+
+                        <a class="privacy" href="#">Lire notre politique de confidentialité</a>
+                    </div>
+                    <div class="news-right">
+                        <p>
+                            Chaque semaine, recevez « La Lettre » qui vous immerge dans la vie
+                            locale. Découvrez en avant-première : nos éclairages sur les
+                            destinations, les conseils de nos spécialistes, nos coups de cœur, et nos
+                            dernières tendances pour faire le plein d’inspirations.
+                            <a class="more" href="#">En savoir plus</a>
+                        </p>
+                    </div>
+
+                </div>
             </div>
-            <div class="module__newsletter__text">
-                Chaque semaine, recevez «&nbsp;La&nbsp;Lettre&nbsp;» qui vous immerge dans la vie locale. Découvrez en
-                avant-première&nbsp;: nos éclairages sur les destinations, les conseils de nos spécialistes, nos coups
-                de cœur, et nos dernières tendances pour faire le plein d’inspirations.
-                <span class="module__newsletter__pagelink behavior--addlink"
-                    data-obfurl="L2luc2NyaXB0aW9uLW5ld3NsZXR0ZXI=">En savoir plus</span>
-            </div>
-        </div>
+        </main>
     </section>
+
     <footer></footer>
 
 </body>
