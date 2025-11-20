@@ -790,7 +790,10 @@ footer {
  height: 100%;
  gap: .5em;
  display: grid;
- place-content: center;
+}
+.carfs .card-details img{
+  width: 100%;
+  height: min-content;
 }
 
 .carfs  .card-button {
@@ -814,9 +817,11 @@ footer {
 }
 
 /*Text*/
-.carfs > .text-title {
+.carfs  .text-title {
  font-size: 1.5em;
- font-weight: bold;
+ font-weight: bolder;
+ color: #031F73;
+ text-align: center;
 }
 
 /*Hover*/
