@@ -132,6 +132,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
 
 }
@@ -494,6 +495,8 @@ html {
 }
 
 /*____________the footer sectiojn*/
+
+
 footer {
   background-color: #00134b;
   color: #fdc808;
@@ -880,7 +883,7 @@ section#newletter>main>.containe-news {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
-}
+}ƒƒ
 
 /* Titre centré */
 section#newletter>main>.containe-news>.news-title {
