@@ -498,7 +498,8 @@ footer {
   background-color: #00134b;
   color: #fdc808;
   width: 100%;
-  height: 50vh;
+  height: max(50vh,500px);
+
   display: flex;
   justify-content: space-around;
 }
@@ -519,6 +520,29 @@ footer .sofia-contact{
 footer .sofia-contact a {
   vertical-align: middle;
   margin: auto 0;
+  transition: transform 0.3s ease;
+
+}
+footer .sofia-contact a:hover{
+  transform: scale(1.7);
+
+}
+footer .people-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .sofia{
+  font-weight: bold;
+
+}
+
+footer >.signature >a{
+}
+footer >.signature >a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 /*-------------- VOIR NO CONSWELEZ SECTION------------------*/
 #con-cards {
