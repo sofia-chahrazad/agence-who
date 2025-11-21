@@ -512,7 +512,14 @@ footer .line-footer{
 footer .people-content{
   margin:  auto;
 }
-
+footer .sofia-contact{
+  display: flex;
+  justify-content: space-between;
+}
+footer .sofia-contact a {
+  vertical-align: middle;
+  margin: auto 0;
+}
 /*-------------- VOIR NO CONSWELEZ SECTION------------------*/
 #con-cards {
   width: 100%;
