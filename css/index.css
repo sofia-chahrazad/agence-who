@@ -128,8 +128,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/bg-image.png");
-  background-size: cover;
+  background-image: url("../images/bg3.webp");
+  background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
