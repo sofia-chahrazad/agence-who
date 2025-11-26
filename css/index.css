@@ -127,7 +127,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/bg3.webp");
+  background-image: url("../images/background1.jpg");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -947,7 +947,7 @@ section#newletter>main>.containe-news>.news-title>h2 {
 
 
 /* Grille 2 colonnes */
-section#newletter>main>.containe-news>.news-grid {
+section#newletter {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -955,14 +955,14 @@ section#newletter>main>.containe-news>.news-grid {
 }
 
 /* Colonne gauche */
-section#newletter>main>.containe-news>.news-grid>.news-left {
+section#newletter>.news-left {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
 /* Input + bouton type "pill" */
-section#newletter>main>.containe-news>.news-grid>.news-left>#input {
+section#newletter>.news-left>#input {
   width: min(620px, 100%);
   background: #fff;
   border-radius: 999px;
@@ -973,7 +973,7 @@ section#newletter>main>.containe-news>.news-grid>.news-left>#input {
 }
 
 /* Champ */
-section#newletter>main>.containe-news>.news-grid>.news-left>#input>input {
+section#newletter>.news-left>#input>input {
   flex: 1;
   border: none;
   outline: none;
@@ -985,7 +985,7 @@ section#newletter>main>.containe-news>.news-grid>.news-left>#input>input {
 }
 
 /* Bouton noir */
-section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
+section#newletter>.news-left>#input>button {
   border: none;
   cursor: pointer;
   background: #031F73;
@@ -997,13 +997,13 @@ section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-section#newletter>main>.containe-news>.news-grid>.news-left>#input>button:hover {
+section#newletter>.news-left>#input>button:hover {
   transform: translateY(-1px);
   opacity: 0.9;
 }
 
 /* Lien confidentialité */
-section#newletter>main>.containe-news>.news-grid>.news-left>.privacy {
+section#newletter>.news-left>.privacy {
   font-size: 0.95rem;
   color: #031F73;
   text-decoration: underline;
@@ -1011,7 +1011,7 @@ section#newletter>main>.containe-news>.news-grid>.news-left>.privacy {
 }
 
 /* Colonne droite */
-section#newletter>main>.containe-news>.news-grid>.news-right>p {
+section#newletter>.news-right>p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #4a4a4a;
@@ -1019,7 +1019,7 @@ section#newletter>main>.containe-news>.news-grid>.news-right>p {
 }
 
 /* "En savoir plus" */
-section#newletter>main>.containe-news>.news-grid>.news-right>p>.more {
+section#newletter>.news-right>p>.more {
   color: #111;
   text-decoration: underline;
   font-size: 0.95rem;
@@ -1029,12 +1029,12 @@ section#newletter>main>.containe-news>.news-grid>.news-right>p>.more {
 
 /* Responsive */
 @media (max-width: 900px) {
-  section#newletter>main>.containe-news>.news-grid {
+  section#newletter {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  section#newletter>main>.containe-news>.news-grid>.news-right>p {
+  section#newletter>.news-right>p {
     max-width: 100%;
   }
 }
@@ -1048,14 +1048,14 @@ section#newletter>main>.containe-news>.news-grid>.news-right>p>.more {
     padding: 0 18px;
   }
 
-  section#newletter>main>.containe-news>.news-grid>.news-left>#input {
+  section#newletter>.news-left>#input {
     flex-direction: column;
     border-radius: 22px;
     padding: 10px;
     gap: 10px;
   }
 
-  section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
+  section#newletter>.news-left>#input>button {
     width: 100%;
   }
 }
