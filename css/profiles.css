@@ -148,6 +148,8 @@ html {
 }
 #profiles-hero> h2{
     color: #a5c0f0;
+    margin: 0 20rem;
+    text-align: center;
 }
 #profiles-hero .btn {
   display: flex;
