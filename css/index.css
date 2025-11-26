@@ -12,16 +12,11 @@
 
 :root {
   --ink: #0b2f6f;
-  /* bleu du contour/texte */
   --bg: #e9eaee;
-  /* fond gris clair */
   --theBLue: ;
   --card-bg: #ffffff;
-  /* fond carte */
   --radius: 22px;
-  /* arrondi cartes */
   --border: 3px;
-  /* épaisseur bordure */
   --shadow: 0 12px 30px rgba(0, 0, 0, .08);
 }
 
@@ -33,13 +28,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(135deg, rgba(3, 31, 115, 1) 0%, rgba(3, 17, 64, 1) 22%, rgba(3, 17, 64, 1) 74%, rgba(3, 31, 115, 1) 100%);
+  background-color: transparent;
   background-attachment: fixed;
   padding: 10px 40px;
   height: 10vh;
   width: 100%;
   position: fixed;
   z-index: 100;
+  transition: background-color 0.5s ease,
+              box-shadow 0.5s ease;
+}
+.navbar:hover{
+    background-color: #031140;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+
+}
+.navbar.scrolled{
+  background-color: #031140;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -945,24 +952,20 @@ section#newletter>main>.containe-news>.news-title>h2 {
 }
 
 
-
-/* Grille 2 colonnes */
-section#newletter {
+section#newletter>main>.containe-news>.news-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-/* Colonne gauche */
-section#newletter>.news-left {
+section#newletter>main>.containe-news>.news-grid>.news-left {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* Input + bouton type "pill" */
-section#newletter>.news-left>#input {
+section#newletter>main>.containe-news>.news-grid>.news-left>#input {
   width: min(620px, 100%);
   background: #fff;
   border-radius: 999px;
@@ -971,9 +974,7 @@ section#newletter>.news-left>#input {
   align-items: center;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
 }
-
-/* Champ */
-section#newletter>.news-left>#input>input {
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>input {
   flex: 1;
   border: none;
   outline: none;
@@ -984,8 +985,7 @@ section#newletter>.news-left>#input>input {
   border-radius: 999px;
 }
 
-/* Bouton noir */
-section#newletter>.news-left>#input>button {
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
   border: none;
   cursor: pointer;
   background: #031F73;
@@ -997,29 +997,26 @@ section#newletter>.news-left>#input>button {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-section#newletter>.news-left>#input>button:hover {
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>button:hover {
   transform: translateY(-1px);
   opacity: 0.9;
 }
 
-/* Lien confidentialité */
-section#newletter>.news-left>.privacy {
+section#newletter>main>.containe-news>.news-grid>.news-left>.privacy {
   font-size: 0.95rem;
   color: #031F73;
   text-decoration: underline;
   width: fit-content;
 }
 
-/* Colonne droite */
-section#newletter>.news-right>p {
+section#newletter>main>.containe-news>.news-grid>.news-right>p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #4a4a4a;
   max-width: 560px;
 }
 
-/* "En savoir plus" */
-section#newletter>.news-right>p>.more {
+section#newletter>main>.containe-news>.news-grid>.news-right>p>.more {
   color: #111;
   text-decoration: underline;
   font-size: 0.95rem;
@@ -1027,14 +1024,13 @@ section#newletter>.news-right>p>.more {
   white-space: nowrap;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
-  section#newletter {
+  section#newletter>main>.containe-news>.news-grid {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  section#newletter>.news-right>p {
+  section#newletter>main>.containe-news>.news-grid>.news-right>p {
     max-width: 100%;
   }
 }
@@ -1048,14 +1044,14 @@ section#newletter>.news-right>p>.more {
     padding: 0 18px;
   }
 
-  section#newletter>.news-left>#input {
+  section#newletter>main>.containe-news>.news-grid>.news-left>#input {
     flex-direction: column;
     border-radius: 22px;
     padding: 10px;
     gap: 10px;
   }
 
-  section#newletter>.news-left>#input>button {
+  section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
     width: 100%;
   }
 }

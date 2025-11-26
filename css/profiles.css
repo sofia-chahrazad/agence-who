@@ -48,8 +48,8 @@ html {
 }
 
 .navbar.scrolled {
-    background-color:rgba(3, 17, 64, 1);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background-color:#031140;
+    box-shadow: 0 4px 10px #0000004d;
 
 
 }
@@ -144,7 +144,7 @@ html {
 #profiles-hero> h1{
     font-size: 3rem;
     padding: 5rem 0;
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 8px white;
 }
 #profiles-hero> h2{
     color: #a5c0f0;
@@ -323,7 +323,16 @@ html {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-
+/*_________________the actual section __________*/
+.actual {
+  height: auto;          
+  min-height: auto;
+}
+@media (min-width: 768px) {
+  .actual {
+    min-height: 100vh;  
+  }
+}
 
 /*____________the footer sectiojn*/
 
