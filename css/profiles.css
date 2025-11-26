@@ -43,7 +43,9 @@ html {
   transition: background-color 0.5s ease,
               box-shadow 0.5s ease;  
 }
-
+.navbar:hover{
+    background-color:rgba(3, 17, 64, 1);
+}
 
 .navbar.scrolled {
     background-color:rgba(3, 17, 64, 1);
