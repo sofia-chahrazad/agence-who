@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/profiles.css">
     <title>Profiles</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">
             <div class="shadow"></div>
             <a href="./index.html#search-section"> <img src="./images/logo.svg" alt="Agence WHO Logo"></a>
-    
+
         </div>
         <nav class="nav-links">
             <a href="./reservation.htm">profile</a>
@@ -20,7 +22,26 @@
             <a href="#">nous</a>
         </nav>
     </header>
-    <section>
+    <section id="profiles-hero">
+        <h1>
+            Choisissez qui vous êtes dans le temps
+        </h1>
+        <h2>
+            Étudiant, historien ou explorateur de galaxies lointaines : votre profil façonne vos voyages… et vos
+            réductions.
+        </h2>
+        <button type="button" class="btn">
+            <strong>Decouvrez nos profiles</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+
 
     </section>
 
@@ -30,35 +51,39 @@
                 <div class="sofia-div">
                     <p class="sofia">RASLAIN Chahrazad Sofia</p>
                     <div class="sofia-contact">
-                        <a href="https://github.com/sofia-chahrazad/" target="_blank"><img src="./images/github.svg" alt="github-image" srcset="" ></a>
-                        <a href="https://www.linkedin.com/in/sofia-chahrazad-raslain/" target="_blank"><img src="./images/linkedin.svg" alt="linkedIn-image" srcset=""></a>
-                        <a href="https://www.kaggle.com/sofiachahrazad" target="_blank"><img src="./images/kaggle.svg" alt="kaggle-image" srcset=""></a>
+                        <a href="https://github.com/sofia-chahrazad/" target="_blank"><img src="./images/github.svg"
+                                alt="github-image" srcset=""></a>
+                        <a href="https://www.linkedin.com/in/sofia-chahrazad-raslain/" target="_blank"><img
+                                src="./images/linkedin.svg" alt="linkedIn-image" srcset=""></a>
+                        <a href="https://www.kaggle.com/sofiachahrazad" target="_blank"><img src="./images/kaggle.svg"
+                                alt="kaggle-image" srcset=""></a>
                     </div>
-                    
+
                 </div>
                 <div class="dea-div">
                     <p class="dea">THIMON déa</p>
                 </div>
-                
-                
+
+
             </div>
         </div>
         <div class="line-footer"></div>
         <div class="signature">
             <img src="./images/IUT Orsay 1.svg" class="bg-white mt-8">
-            <a href="./report/report.pdf" target="_blank" id="report-pdf" >the report in pdf format </a>
+            <a href="./report/report.pdf" target="_blank" id="report-pdf">the report in pdf format </a>
         </div>
     </footer>
 </body>
+
 </html>
 <script>
-  window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
 
-    if (window.scrollY > 50) {         
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 </script>
