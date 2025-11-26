@@ -333,7 +333,11 @@ html {
     min-height: 100vh;  
   }
 }
-
+.profilewrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+#profile-1
 /*____________the footer sectiojn*/
 
 
