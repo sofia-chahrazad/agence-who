@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ink: #0b2f6f;
+  /* bleu du contour/texte */
+  --bg: #e9eaee;
+  /* fond gris clair */
+  --theBLue: ;
+  --card-bg: #ffffff;
+  /* fond carte */
+  --radius: 22px;
+  /* arrondi cartes */
+  --border: 3px;
+  /* épaisseur bordure */
+  --shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, rgba(3, 31, 115, 1) 0%, rgba(3, 17, 64, 1) 22%, rgba(3, 17, 64, 1) 74%, rgba(3, 31, 115, 1) 100%);
+  background-attachment: fixed;
+  padding: 10px 40px;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  position: relative;
+  z-index: 1;
+  margin-top: 45px;
+  height: 120px;
+  transition: height 0.1s ease, height 0.4s ease;
+  animation: pulseLogo 2.5s ease-in-out infinite;
+}
+
+.logo img:hover {
+  animation-play-state: paused;
+  height: 150px;
+
+}
+
+.logo .shadow {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 60px;
+  height: 60px;
+  background-color: #031F73;
+
+  border-radius: 15px;
+  z-index: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo:hover .shadow {
+  box-shadow: 0 0 48px 25px #fdc808;
+
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-links {
+  display: flex;
+
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.nav-links a {
+
+  color: #FDC808;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: font-size 0.4s ease;
+}
+
+.nav-links a:hover {
+  font-size: 25px;
+  color: #c49000;
+}
+
+
+/*____________the footer sectiojn*/
+
+
+footer {
+    background-image: linear-gradient(135deg, rgb(8, 42, 145) 0%, rgba(3, 17, 64, 1) 30%, rgba(3, 17, 64, 1) 70%, rgb(8, 42, 145) 100%);
+
+  color: #fdc808;
+  width: 100%;
+  height: max(50vh,500px);
+
+  display: flex;
+  justify-content: space-around;
+}
+footer .line-footer{
+  width: 4px;
+  background-color: #fdc808;
+  height: 70%;
+  margin: auto 0;
+  border-radius: 5rem;
+}
+footer .people-content{
+  margin:  auto;
+}
+footer .sofia-contact{
+  display: flex;
+  justify-content: space-between;
+}
+footer .sofia-contact a {
+  vertical-align: middle;
+  margin: auto 0;
+  transition: transform 0.3s ease;
+
+}
+footer .sofia-contact a:hover{
+  transform: scale(1.7);
+
+}
+footer .people-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .sofia{
+  font-weight: bold;
+
+}
+
+footer >.signature >a{
+  font-size: 2rem;
+}
+footer >.signature >a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
