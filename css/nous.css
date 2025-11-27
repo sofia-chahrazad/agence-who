@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+@import url('./standard.css');
+#nous-section{
+    min-height: 100vh;
+    max-height: fit-content;
+    background-image: url(../images/background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#nous-section .whoami{
+    min-height: 70vh;
+    width: min(70%,1000px) ;
+    max-height: fit-content;
+    background-color: #031140;
+    animation: floatsection 2.5s ease-in-out infinite   ;
+    box-shadow: 0 6px 20px 10px #00000056;
+    border-radius: 1.5rem;
+    
+}
+#nous-section-2 .whoami{
+    min-height: 70vh;
+    width: min(70%,1000px) ;
+    max-height: fit-content;
+    background-color: #031140;
+    animation: floatsection 2.5s ease-in-out infinite   ;
+    box-shadow: 0 6px 20px 10px #00000056;
+    border-radius: 1.5rem;
+    
+}
+@keyframes floatsection {
+  0% {
+    transform: translateY(0px);
+        box-shadow: 0 6px 20px 10px #00000056;
+
+  }
+
+  50% {
+    transform: translateY(-15px);
+    box-shadow: 10px 40px 20px 10px #00000090;
+
+  }
+
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 6px 20px 10px #00000056;
+
+  }
+}
+@media (max-width:769px) {
+    .whoami{
+        width: 95%;
+    }
+    
+    
+}
