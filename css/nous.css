@@ -23,18 +23,10 @@
     animation: floatsection 2.5s ease-in-out infinite   ;
     box-shadow: 0 6px 20px 10px #00000056;
     border-radius: 1.5rem;
+    background-image: url(../images/image4.jpg);
     
 }
-#nous-section-2 .whoami{
-    min-height: 70vh;
-    width: min(70%,1000px) ;
-    max-height: fit-content;
-    background-color: #031140;
-    animation: floatsection 2.5s ease-in-out infinite   ;
-    box-shadow: 0 6px 20px 10px #00000056;
-    border-radius: 1.5rem;
-    
-}
+
 @keyframes floatsection {
   0% {
     transform: translateY(0px);
