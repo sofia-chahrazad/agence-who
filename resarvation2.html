@@ -26,42 +26,47 @@
     </header>
 
 
-
-
-
-    <section id="res-form">
-
-        <form href="./resarvation2.html" method="post">
-            <div>
-                <h1>Reservation</h1>
-            </div>
+    
+    <section>
+       
+        <form method="post" >
+            <div> <h1>Reservation</h1></div>
             <div class="input-box">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" placeholder="votre nom" required>
-            </div>
-            <div class="input-box">
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required>
-            </div>
-            <div class="input-box">
-                <label for="bth_d">date de naissance</label>
-                <input type="date" id="bth_d" name="date_naissance" required>
-            </div>
+              <label for="d-voy">temporalité desirée</label>
+              <select name="temporalité" id="d-voy" required>
+                <option value="" disabled selected>-- Choisissez une période --</option>
+                <option value="dog">Paléolithique</option>
+                <option value="cat">Néolithique</option>
+                <option value="hamster">Âge du bronze</option>
+                <option value="parrot">Civilisations antiques</option>
+                <option value="spider">Renaissance</option>
+                <option value="goldfish">Utopia</option>
+                <option value="concombre">Temps des Oods</option>
+              </select>
+              </div>
+
+              <div class="input-box">
+              <label for="mail">E-mail</label>
+              <input type="email" id="mail" name="mail" placeholder="laura.goran@gmail.com" required>
+              </div>
+
             <div class="input-box-bouton">
-                <button onclick="location.href='reservation2.html'">Suivant</button>
-            </div>
+              <input type="submit" value="Envoyer">
+              </div>
             <div class="input-box-bouton">
-                <button type="reset">reinitialiser</button>
-            </div>
+              <input type="reset" value="reinitialiser">
+              </div>
             <div class="regle">
                 <label>
-                    <input type="checkbox" required>
-                    J'accepte les condition d'utilisateur
+                  <input type="checkbox" required>
+                  J'accepte les condition d'utilisateur
                 </label>
-            </div>
+              </div>
 
         </form>
     </section>
+
+
 
 
 
