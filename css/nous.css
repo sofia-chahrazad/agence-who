@@ -16,6 +16,7 @@
     width: 100%;
 }
 #nous-section .whoami{
+    margin-top: 20vh;
     min-height: 70vh;
     width: min(70%,1000px) ;
     max-height: fit-content;
@@ -24,9 +25,41 @@
     box-shadow: 0 6px 20px 10px #00000056;
     border-radius: 1.5rem;
     background-image: url(../images/image4.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    color: #c1d8ff;
+
     
 }
 
+#nous-section .whoami h1{
+        color: #c1d8ff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem 0;
+    text-shadow: 0 0 8px black;
+
+}
+#nous-section .whoami h2{
+    text-align: center;
+    font-weight: bolder;
+}
+#nous-section .whoami #imp-doc{
+    width: 0%;
+    position: relative;
+    float: left;
+    margin: 0 3rem;
+    border-radius: 2rem;
+}
+#naissance{
+    align-self: center;
+    width: 80%;
+    float: rigth;
+    border-radius: 2rem;
+}
+#nous-section .whoami p{
+
+}
 @keyframes floatsection {
   0% {
     transform: translateY(0px);
