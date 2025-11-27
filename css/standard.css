@@ -1,0 +1,323 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ink: #0b2f6f;
+  /* bleu du contour/texte */
+  --bg: #e9eaee;
+  /* fond gris clair */
+  --theBLue: ;
+  --card-bg: #ffffff;
+  /* fond carte */
+  --radius: 22px;
+  /* arrondi cartes */
+  --border: 3px;
+  /* épaisseur bordure */
+  --shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: transparent;
+  background-attachment: fixed;
+  padding: 10px 40px;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: background-color 0.5s ease,
+              box-shadow 0.5s ease;  
+}
+.navbar:hover{
+    background-color:rgba(3, 17, 64, 1);
+}
+
+.navbar.scrolled {
+    background-color:#031140;
+    box-shadow: 0 4px 10px #0000004d;
+
+
+}
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  position: relative;
+  z-index: 1;
+  margin-top: 45px;
+  height: 120px;
+  transition: height 0.1s ease, height 0.4s ease;
+  animation: pulseLogo 2.5s ease-in-out infinite;
+}
+
+.logo img:hover {
+  animation-play-state: paused;
+  height: 150px;
+
+}
+
+.logo .shadow {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 60px;
+  height: 60px;
+  background-color: #031F73;
+
+  border-radius: 15px;
+  z-index: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo:hover .shadow {
+  box-shadow: 0 0 48px 25px #fdc808;
+
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-links {
+  display: flex;
+
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.nav-links a {
+
+  color: #FDC808;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: font-size 0.4s ease;
+}
+
+.nav-links a:hover {
+  font-size: 25px;
+  color: #c49000;
+}
+
+
+section#newletter {
+  background: #f3f3f3;
+  padding: 40px 0;
+}
+
+/* Conteneur */
+section#newletter>main>.containe-news {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}ƒƒ
+
+/* Titre centré */
+section#newletter>main>.containe-news>.news-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+section#newletter>main>.containe-news>.news-title>h2 {
+  font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+  font-weight: 700;
+  color: #031F73;
+  text-align: center;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+section#newletter>main>.containe-news>.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-left>#input {
+  width: min(620px, 100%);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 18px 22px;
+  font-size: 1rem;
+  background: transparent;
+  color: #111;
+  border-radius: 999px;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
+  border: none;
+  cursor: pointer;
+  background: #031F73;
+  color: #fdc808;
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-left>#input>button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-left>.privacy {
+  font-size: 0.95rem;
+  color: #031F73;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-right>p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  max-width: 560px;
+}
+
+section#newletter>main>.containe-news>.news-grid>.news-right>p>.more {
+  color: #111;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  section#newletter>main>.containe-news>.news-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  section#newletter>main>.containe-news>.news-grid>.news-right>p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  section#newletter {
+    padding: 50px 0;
+  }
+
+  section#newletter>main>.containe-news {
+    padding: 0 18px;
+  }
+
+  section#newletter>main>.containe-news>.news-grid>.news-left>#input {
+    flex-direction: column;
+    border-radius: 22px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  section#newletter>main>.containe-news>.news-grid>.news-left>#input>button {
+    width: 100%;
+  }
+}
+
+/*____________the footer sectiojn*/
+
+
+footer {
+    background-image: linear-gradient(135deg, rgb(8, 42, 145) 0%, rgba(3, 17, 64, 1) 30%, rgba(3, 17, 64, 1) 70%, rgb(8, 42, 145) 100%);
+
+  color: #fdc808;
+  width: 100%;
+  height: max(50vh,500px);
+
+  display: flex;
+  justify-content: space-around;
+}
+footer .line-footer{
+  width: 4px;
+  background-color: #fdc808;
+  height: 70%;
+  margin: auto 0;
+  border-radius: 5rem;
+}
+footer .people-content{
+  margin:  auto;
+}
+footer .sofia-contact{
+  display: flex;
+  justify-content: space-between;
+}
+footer .sofia-contact a {
+  vertical-align: middle;
+  margin: auto 0;
+  transition: transform 0.3s ease;
+
+}
+footer .sofia-contact a:hover{
+  transform: scale(1.7);
+
+}
+footer .people-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .sofia{
+  font-weight: bold;
+
+}
+
+footer >.signature >a{
+  font-size: 2rem;
+}
+footer >.signature >a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
