@@ -897,7 +897,6 @@
   background-color: rgba(255, 255, 255, 0.334);
 }
 
-/*Hover*/
 .carfs .card:hover {
   border-color: #031F73;
   box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.25);
