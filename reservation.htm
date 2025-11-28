@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -31,40 +31,42 @@
 
     <section id="res-form">
 
-        <a href="./reservation2.html">
-
-            <form  method="post">
-            <div>
-                <h1>Reservation</h1>
-            </div>
-            <div class="input-box">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" placeholder="votre nom" required>
-            </div>
-            <div class="input-box">
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required>
-            </div>
-            <div class="input-box">
-                <label for="bth_d">date de naissance</label>
-                <input type="date" id="bth_d" name="date_naissance" required>
-            </div>
-            <div class="input-box-bouton">
-                <button onclick="location.href='reservation2.html'">Suivant</button>
-            </div>
-            <div class="input-box-bouton">
-                <button type="reset">reinitialiser</button>
-            </div>
-            <div class="regle">
-                <label>
-                    <input type="checkbox" required>
-                    J'accepte les condition d'utilisateur
-                </label>
-            </div>
-
-        </form>
-        </a>
         
+
+            <form method="post">
+                <div>
+                    <h1>Reservation</h1>
+                </div>
+                <div class="input-box">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="votre nom" required>
+                </div>
+                <div class="input-box">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required>
+                </div>
+                <div class="input-box">
+                    <label for="bth_d">date de naissance</label>
+                    <input type="date" id="bth_d" name="date_naissance" required>
+                </div>
+                <div class="input-box-bouton">
+                    <a href="./reservation2.html">
+                        <button >Suivant</button>
+                    </a>
+                </div>
+                <div class="input-box-bouton">
+                    <button type="reset">reinitialiser</button>
+                </div>
+                <div class="regle">
+                    <label>
+                        <input type="checkbox" required>
+                        J'accepte les condition d'utilisateur
+                    </label>
+                </div>
+
+            </form>
+        
+
     </section>
 
 
@@ -72,36 +74,35 @@
 
 
     <section id="newletter">
-        <main>
-            <div class="containe-news">
+        <div class="containe-news">
 
-                <div class="news-title">
-                    <h2>
-                        Abonnez-vous à notre newsletter
-                    </h2>
-                </div>
-                <div class="news-grid">
-                    <div class="news-left">
-                        <form id="input" action="#" method="post">
-                            <input type="email" name="email" placeholder="Saisir son email" required>
-                            <button type="submit">S'INSCRIRE</button>
-                        </form>
-
-                        <a class="privacy" href="#">Lire notre politique de confidentialité</a>
-                    </div>
-                    <div class="news-right">
-                        <p>
-                            Chaque semaine, recevez « La Lettre » qui vous immerge dans la vie
-                            locale. Découvrez en avant-première : nos éclairages sur les
-                            destinations, les conseils de nos spécialistes, nos coups de cœur, et nos
-                            dernières tendances pour faire le plein d’inspirations.
-                            <a class="more" href="#">En savoir plus</a>
-                        </p>
-                    </div>
-
-                </div>
+            <div class="news-title">
+                <h2>
+                    Abonnez-vous à notre newsletter
+                </h2>
             </div>
-        </main>
+            <div class="news-grid">
+                <div class="news-left">
+                    <form id="input" action="#" method="post">
+                        <input type="email" name="email" placeholder="Saisir son email" required>
+                        <button type="submit">S'INSCRIRE</button>
+                    </form>
+
+                    <a class="privacy" href="#">Lire notre politique de confidentialité</a>
+                </div>
+                <div class="news-right">
+                    <p>
+                        Chaque semaine, recevez « La Lettre » qui vous immerge dans la vie
+                        locale. Découvrez en avant-première : nos éclairages sur les
+                        destinations, les conseils de nos spécialistes, nos coups de cœur, et nos
+                        dernières tendances pour faire le plein d’inspirations.
+                        <a class="more" href="#">En savoir plus</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
 
@@ -112,11 +113,11 @@
                     <p class="sofia">RASLAIN Chahrazad Sofia</p>
                     <div class="sofia-contact">
                         <a href="https://github.com/sofia-chahrazad/" target="_blank"><img src="./images/github.svg"
-                                alt="github-image" srcset=""></a>
+                                alt="github-image"></a>
                         <a href="https://www.linkedin.com/in/sofia-chahrazad-raslain/" target="_blank"><img
-                                src="./images/linkedin.svg" alt="linkedIn-image" srcset=""></a>
+                                src="./images/linkedin.svg" alt="linkedIn-image"></a>
                         <a href="https://www.kaggle.com/sofiachahrazad" target="_blank"><img src="./images/kaggle.svg"
-                                alt="kaggle-image" srcset=""></a>
+                                alt="kaggle-image"></a>
                     </div>
 
                 </div>
@@ -129,22 +130,21 @@
         </div>
         <div class="line-footer"></div>
         <div class="signature">
-            <img src="./images/IUT Orsay 1.svg" class="bg-white mt-8">
+            <img src="./images/iut_orsay_1.svg" class="bg-white mt-8" alt="logo">
             <a href="./report/report.pdf" target="_blank" id="report-pdf">the report in pdf format </a>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
-
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
