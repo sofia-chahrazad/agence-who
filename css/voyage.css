@@ -1,0 +1,289 @@
+@import url('standard.css');
+
+#nos-voyage {
+
+    min-height: 50vh;
+    height: fit-content;
+    background-image: url('../images/background1.jpg');
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15vh;
+
+}
+
+#nos-voyage h1 {
+    vertical-align: middle;
+    color: #c1d8ff;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 0 40px rgba(154, 176, 255, 0.917);
+}
+
+#nos-voyage h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+
+}
+
+
+.profile-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 2rem;
+}
+
+.profile-items {
+    background-color: #031140;
+    border: 1px solid #3c3c3c;
+    border-radius: 1rem;
+    min-height: fit-content;
+    width: 70%;
+    color: #c1d8ff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.profile-items:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 30px 5px #fdc8085f;
+}
+
+.demo {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.demo img {
+    height: 200px;
+    width: 100%;
+    /* or any width */
+    object-fit: cover;
+    /* zooms + crops to fill the box */
+    object-position: center;
+    width: 100%;
+    height: 200px;
+    display: block;
+    border-radius: 8px;
+}
+
+/*-----------------------------voire plus v3 ---------------------*/
+
+
+
+
+
+#nos-voyage .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    height: 5rem;
+    background-size: 300% 300%;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    margin: 3rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),
+        linear-gradient(22deg,
+            #fdc808 10%,
+            #12034c 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#nos-voyage #container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+#nos-voyage strong {
+    z-index: 2;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#nos-voyage #glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+#nos-voyage .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+#nos-voyage .circle:nth-of-type(1) {
+    background: rgba(232, 160, 5, 0.636);
+}
+
+#nos-voyage .circle:nth-of-type(2) {
+    background: rgba(17, 17, 123, 0.704);
+}
+
+#nos-voyage .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+#nos-voyage .btn:hover {
+    transform: scale(1.1);
+}
+
+#nos-voyage .btn:active {
+    border: double 4px #031F73;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn:active .circle {
+    background: #535cfe;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+
+/*-----------------------------voire plus v3 finish ---------------------*/
+
+@media (max-width:769px) {
+    .demo {
+        display: none;
+    }
+
+    .actual {
+        background-image: url(../images/background1.jpg);
+        background-attachment: fixed;
+        background-size: auto;
+        max-height: fit-content;
+        background-repeat: repeat;
+    }
+
+    .profile-wrapper {
+        padding: 0;
+    }
+
+    .profile-items {
+        max-height: min-content;
+        width: 95%;
+    }
+}
