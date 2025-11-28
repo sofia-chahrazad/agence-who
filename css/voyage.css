@@ -57,7 +57,7 @@
 
 .profile-items:hover {
     transform: translateY(-15px);
-    box-shadow: 0 8px 30px 5px #fdc8085f;
+    box-shadow: 0 8px 30px 5px #007bff5f;
 }
 
 .demo {
