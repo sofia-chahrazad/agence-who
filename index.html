@@ -36,12 +36,12 @@
         <button type="button" class="btn">
             <strong>Chercher Votre voyage Parfait</strong>
             <span id="container-stars">
-                <span id="stars"></span>
+                <div id="stars"></div>
             </span>
 
             <span id="glow">
-                <span class="circle"></span>
-                <span class="circle"></span>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </span>
         </button>
     </section>
@@ -257,36 +257,36 @@
         </div>
     </section>
     <section id="newletter">
-    
-            <div class="containe-news">
 
-                <div class="news-title">
-                    <h2>
-                        Abonnez-vous à notre newsletter
-                    </h2>
-                </div>
-                <div class="news-grid">
-                    <div class="news-left">
-                        <form id="input" action="#" method="post">
-                            <input type="email" name="email" placeholder="Saisir son email" required>
-                            <button type="submit">S'INSCRIRE</button>
-                        </form>
+        <div class="containe-news">
 
-                        <a class="privacy" href="#">Lire notre politique de confidentialité</a>
-                    </div>
-                    <div class="news-right">
-                        <p>
-                            Chaque semaine, recevez « La Lettre » qui vous immerge dans la vie
-                            locale. Découvrez en avant-première : nos éclairages sur les
-                            destinations, les conseils de nos spécialistes, nos coups de cœur, et nos
-                            dernières tendances pour faire le plein d’inspirations.
-                            <a class="more" href="#">En savoir plus</a>
-                        </p>
-                    </div>
-
-                </div>
+            <div class="news-title">
+                <h2>
+                    Abonnez-vous à notre newsletter
+                </h2>
             </div>
-        
+            <div class="news-grid">
+                <div class="news-left">
+                    <form id="input" action="#" method="post">
+                        <input type="email" name="email" placeholder="Saisir son email" required>
+                        <button type="submit">S'INSCRIRE</button>
+                    </form>
+
+                    <a class="privacy" href="#">Lire notre politique de confidentialité</a>
+                </div>
+                <div class="news-right">
+                    <p>
+                        Chaque semaine, recevez « La Lettre » qui vous immerge dans la vie
+                        locale. Découvrez en avant-première : nos éclairages sur les
+                        destinations, les conseils de nos spécialistes, nos coups de cœur, et nos
+                        dernières tendances pour faire le plein d’inspirations.
+                        <a class="more" href="#">En savoir plus</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <footer>
@@ -295,17 +295,21 @@
                 <div class="sofia-div">
                     <p class="sofia">RASLAIN Chahrazad Sofia</p>
                     <div class="sofia-contact">
-                        <a href="https://github.com/sofia-chahrazad/" target="_blank"><img src="./images/github.svg"
-                                alt="github-image" ></a>
+                        <a href="https://github.com/sofia-chahrazad/agence-who" target="_blank"><img src="./images/github.svg"
+                                alt="github-image"></a>
                         <a href="https://www.linkedin.com/in/sofia-chahrazad-raslain/" target="_blank"><img
-                                src="./images/linkedin.svg" alt="linkedIn-image" ></a>
+                                src="./images/linkedin.svg" alt="linkedIn-image"></a>
                         <a href="https://www.kaggle.com/sofiachahrazad" target="_blank"><img src="./images/kaggle.svg"
-                                alt="kaggle-image" ></a>
+                                alt="kaggle-image"></a>
                     </div>
 
                 </div>
                 <div class="dea-div">
                     <p class="dea">THIMON déa</p>
+                    <p class="dea">Projet fictif à but éducatif.
+                        Inspiré librement de la série Doctor Who © BBC Studios.
+                    </p>
+
                 </div>
 
 
@@ -314,21 +318,25 @@
         <div class="line-footer"></div>
         <div class="signature">
             <img src="./images/iut_orsay_1.svg" class="bg-white mt-8" alt="log">
-            <a href="./report/report.pdf" target="_blank" id="report-pdf">the report in pdf format </a>
+            <a href="./report/report.pdf" target="_blank" id="report-pdf">the report in pdf format </a><br>
+            <a href="./report/report.docx" target="_blank" id="report-pdf">the report in .docs format </a><br>
+
+            <a href="https://github.com/sofia-chahrazad/agence-who#readme.md" target="_blank" id="report-pdf">the report in readme.md format </a>
+
         </div>
     </footer>
 
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.navbar');
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
 
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 </body>
 
